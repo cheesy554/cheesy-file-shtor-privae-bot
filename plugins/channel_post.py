@@ -27,7 +27,7 @@ async def channel_post(client: Client, message: Message):
 
     reply_markup = InlineKeyboardMarkup(
                                          [[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]
-                                          [InlineKeyboardButton("🔁 Shorten link", url={link}')]]
+                                          [InlineKeyboardButton("🔁 Shorten link", url=f'{link}')]]
                                                                          
                                        )
 
