@@ -29,7 +29,7 @@ async def channel_post(client: Client, message: Message):
                                          [[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
 
     await reply_text.edit(f"<b>Here is your's link:</b>\n\n{link} \n\n {link} \n", reply_markup=reply_markup, disable_web_page_preview = True)
-    await reply_text.edit(f"Here is your's link: \n\n`{link}` \n\n {link} \n", reply_markup=reply_markup, disable_web_page_preview = True)
+    await reply_text.edit(f" `Here is your's link:` \n\nfont={link}` \n\n {link} \n", reply_markup=reply_markup, disable_web_page_preview = True)
     
 
     if not DISABLE_CHANNEL_BUTTON:
